@@ -25,6 +25,8 @@ import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 import GlobalScrollAwake from "@/components/GlobalScrollAwake";
 import MobileNav from "@/components/MobileNav";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function RootLayout({
   children,
@@ -121,6 +123,8 @@ export default function RootLayout({
 
         {/* MOBILE BOTTOM NAV */}
         <MobileNav />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
