@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "TPM Interiors",
+  title: "JAC MediaLand",
   description: "Exquisite interior design for your spaces",
 };
 
@@ -36,13 +36,27 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${playfair.variable}`} suppressHydrationWarning>
       <body>
+        <div 
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100vw',
+            height: '100vh',
+            backgroundImage: 'url("/1778475141566.jpg")', 
+            backgroundRepeat: 'repeat',
+            backgroundSize: '500px', // Large size for the watermark
+            opacity: 0.06, // Reduced opacity for a normal/subtle look
+            pointerEvents: 'none', // Prevents the watermark from blocking clicks
+            zIndex: 9999,
+          }}
+        />
         <GlobalScrollAwake />
         <header className="header">
           <div className="container header-container">
             <div className="logo">
               <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-                <Image src="/logo.png" alt="TPM Interiors Logo" width={40} height={40} style={{ borderRadius: '50%', border: '2px solid var(--accent-secondary)' }} />
-                <h1 style={{ color: 'var(--accent)', margin: 0, textTransform: 'none' }}>TPM Interiors</h1>
+                <h1 style={{ color: 'var(--accent)', margin: 0, textTransform: 'none' }}>JAC MediaLand</h1>
               </Link>
             </div>
             <nav className="nav">
@@ -98,14 +112,14 @@ export default function RootLayout({
         <footer id="contact" className="footer">
           <div className="container footer-grid">
             <div className="footer-col">
-              <h3 className="footer-title">TPM Interiors</h3>
+              <h3 className="footer-title">JAC MediaLand</h3>
               <p>Bringing your vision to life through innovative, elegant, and timeless interior design.</p>
             </div>
             <div className="footer-col">
               <h3 className="footer-title">Get in touch</h3>
-              <p>No 143-B, Ngr Street, Vaval Thottam Kalapatti,<br/> Coimbatore - 641048</p>
-              <p className="mt-2">Email: contact@tpminteriors.com</p>
-              <p>Phone: +91 98765 43210</p>
+              <p>123 Demo Street, Example City,<br/> Country - 123456</p>
+              <p className="mt-2">Email: contact@jacmedialand.com</p>
+              <p>Phone: +1 (234) 567-8900</p>
             </div>
             <div className="footer-col">
               <h3 className="footer-title">Follow us</h3>
@@ -117,7 +131,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="footer-bottom text-center">
-            <p>&copy; {new Date().getFullYear()} TPM Interiors. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} JAC MediaLand. All rights reserved.</p>
           </div>
         </footer>
 

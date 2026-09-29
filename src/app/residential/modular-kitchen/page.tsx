@@ -15,7 +15,7 @@ export default function ModularKitchen() {
           
           <ScrollAwake className="delay-1">
             <p style={{ marginBottom: '1.5rem', color: 'var(--text-muted)' }}>
-              <strong style={{ color: 'var(--foreground)' }}>At TPM Interiors,</strong> we understand that the kitchen is the heart of the home, and our modular kitchen designs are crafted to enhance both functionality and aesthetics.
+              <strong style={{ color: 'var(--foreground)' }}>At JAC MediaLand,</strong> we understand that the kitchen is the heart of the home, and our modular kitchen designs are crafted to enhance both functionality and aesthetics.
             </p>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--foreground)' }}>Our Approach:</h3>
             <p style={{ marginBottom: '2rem', color: 'var(--text-muted)' }}>
@@ -24,7 +24,7 @@ export default function ModularKitchen() {
             
             <a href="tel:+919876543210" className="whatsapp-btn">
               <PhoneCall size={20} />
-              +91 98765 43210
+              +1 (234) 567-8900
             </a>
           </ScrollAwake>
         </div>

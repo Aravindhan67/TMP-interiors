@@ -24,7 +24,7 @@ export default function AboutUs() {
           </ScrollAwake>
           
           <ScrollAwake tag="p" style={{ fontSize: '1.05rem', color: 'var(--text-muted)', marginBottom: '2.5rem', lineHeight: '1.8' }}>
-            At TPM Interiors, we believe that great design has the power to transform lives. Since our inception, we've been dedicated to creating exceptional spaces that not only reflect our clients' personalities but also enhance their quality of life. With a passion for creativity, a commitment to quality, and a focus on customer satisfaction, we've established ourselves as one of the leading interior design firms in Coimbatore.
+            At JAC MediaLand, we believe that great design has the power to transform lives. Since our inception, we've been dedicated to creating exceptional spaces that not only reflect our clients' personalities but also enhance their quality of life. With a passion for creativity, a commitment to quality, and a focus on customer satisfaction, we've established ourselves as one of the leading interior design firms in Coimbatore.
           </ScrollAwake>
           
           {/* STATS CARD */}
@@ -50,7 +50,7 @@ export default function AboutUs() {
         <ScrollAwake className="about-image-right">
           <Image 
             src="/living_new.jpg" 
-            alt="TPM Interiors Signature Space" 
+            alt="JAC MediaLand Signature Space" 
             fill 
             style={{ objectFit: 'cover', objectPosition: 'center' }} 
           />
@@ -119,7 +119,7 @@ export default function AboutUs() {
               </div>
               <h3>Our Approach</h3>
             </div>
-            <p>At TPM Interiors, we believe in a collaborative and client-centric approach to design. We work closely with you to understand your exact vision, requirements, and budget constraints, turning your dreams into a stunning reality through careful planning.</p>
+            <p>At JAC MediaLand, we believe in a collaborative and client-centric approach to design. We work closely with you to understand your exact vision, requirements, and budget constraints, turning your dreams into a stunning reality through careful planning.</p>
           </ScrollAwake>
 
           <ScrollAwake className="feature-card delay-2">
@@ -150,7 +150,7 @@ export default function AboutUs() {
     <div className="about-cta-banner">
       <div className="container" style={{ textAlign: 'center' }}>
         <ScrollAwake tag="h2" style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '2rem' }}>
-          Get in touch with<br/>TPM Interiors today.
+          Get in touch with<br/>JAC MediaLand today.
         </ScrollAwake>
         <ScrollAwake>
           <a href="tel:+919999999999" className="phone-pill-btn">

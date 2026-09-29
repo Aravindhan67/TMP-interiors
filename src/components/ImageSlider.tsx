@@ -34,7 +34,7 @@ export default function ImageSlider() {
         <Image
           key={src}
           src={src}
-          alt={`TPM Interiors Design ${index + 1}`}
+          alt={`JAC MediaLand Design ${index + 1}`}
           fill
           style={{
             objectFit: 'cover',

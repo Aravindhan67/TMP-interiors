@@ -24,7 +24,7 @@ export default function Home() {
               <br />
               <SplitText
                 tag="h3"
-                text="TPM Interiors"
+                text="JAC MediaLand"
                 className="brand-heading"
                 delay={50}
                 duration={0.8}
@@ -180,7 +180,7 @@ export default function Home() {
             <div className="divider mx-auto"></div>
             
             <div className="testimonial-card">
-              <p className="testimonial-text">"We take pride in our commitment to excellence and client satisfaction. But don't just take our word for it—our clients' spaces speak for themselves. The attention to detail from TPM interiors transformed our home completely."</p>
+              <p className="testimonial-text">"We take pride in our commitment to excellence and client satisfaction. But don't just take our word for it—our clients' spaces speak for themselves. The attention to detail from JAC MediaLand transformed our home completely."</p>
               <h4 className="testimonial-author">- Happy Client</h4>
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function Home() {
         {/* CTA SECTION */}
         <section className="section cta-section">
           <div className="container text-center">
-            <h2 className="title">Get in touch with TPM interiors today.</h2>
+            <h2 className="title">Get in touch with JAC MediaLand today.</h2>
             <p className="subtitle mx-auto">Ready to start your design journey? Let's create something beautiful together.</p>
             <a href="#contact" className="premium-btn">Contact Us Now</a>
           </div>
