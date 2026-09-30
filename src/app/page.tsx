@@ -91,7 +91,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <ScrollAwake style={{ width: '100%' }}>
-                  <Link href="#contact" className="service-pill-btn">
+                  <Link href="/residential-sales" className="service-pill-btn">
                     Residential Sales
                   </Link>
                 </ScrollAwake>
@@ -105,7 +105,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <ScrollAwake style={{ width: '100%' }}>
-                  <Link href="#contact" className="service-pill-btn alt">
+                  <Link href="/commercial-sales" className="service-pill-btn alt">
                     Commercial Sales
                   </Link>
                 </ScrollAwake>
