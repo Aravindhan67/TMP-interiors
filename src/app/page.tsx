@@ -37,7 +37,7 @@ export default function Home() {
               <p className="fade-in-up delay-3">Step into a world of creativity and innovation, where every corner tells a story and every detail reflects our dedication to excellence. Whether you're looking to revamp your home or elevate your commercial space, our team of experienced designers is here to guide you through every step of the process.</p>
               
               <div className="fade-in-up delay-3" style={{ marginTop: '2.5rem' }}>
-                <Link href="/about-us" className="premium-btn">KNOW MORE</Link>
+                <Link href="/contact" className="premium-btn">Contact Us</Link>
               </div>
             </div>
             

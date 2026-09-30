@@ -101,7 +101,6 @@ export default function RootLayout({
                 </li>
                 <li><Link href="/residential-sales">Residential sales</Link></li>
                 <li><Link href="/commercial-sales">Commercial sales</Link></li>
-                <li><Link href="/#process">Our Process</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>
               <ThemeToggle />
