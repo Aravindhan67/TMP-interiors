@@ -56,7 +56,7 @@ export default function RootLayout({
           <div className="container header-container">
             <div className="logo">
               <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-                <h1 style={{ color: 'var(--accent)', margin: 0, textTransform: 'none' }}>JAC MediaLand</h1>
+                <h1 style={{ color: 'var(--accent)', margin: 0, textTransform: 'none', whiteSpace: 'nowrap' }}>JAC MediaLand</h1>
               </Link>
             </div>
             <nav className="nav">
@@ -99,6 +99,8 @@ export default function RootLayout({
                     <Link href="/commercial/lounges">Lounges</Link>
                   </div>
                 </li>
+                <li><Link href="/residential-sales">Residential sales</Link></li>
+                <li><Link href="/commercial-sales">Commercial sales</Link></li>
                 <li><Link href="/#process">Our Process</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
               </ul>

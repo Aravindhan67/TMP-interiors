@@ -5,26 +5,26 @@ import Image from "next/image";
 import { CheckCircle2, PhoneCall } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const kitchenImages = [
+const villaImages = [
   {
-    src: "/kitchen_new.jpg",
-    alt: "Modern Modular Kitchen — Dark Finish",
-    caption: "Design — Contemporary Dark Modular Kitchen",
+    src: "/villa_new.jpg",
+    alt: "Luxury Villa — Aerial Pool View",
+    caption: "Exterior — Private Infinity Pool & Landscape",
   },
   {
-    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80",
-    alt: "Luxury White Modular Kitchen",
-    caption: "Design — Premium White & Wood Kitchen",
+    src: "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80",
+    alt: "Luxury Villa Exterior at Night",
+    caption: "Exterior — Villa Facade at Dusk",
   },
   {
-    src: "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=900&q=80",
-    alt: "Modern Kitchen Island",
-    caption: "Design — Open Kitchen with Island",
+    src: "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=900&q=80",
+    alt: "Luxury Villa Interior Living Room",
+    caption: "Interior — Grand Living Room with Pool View",
   },
   {
-    src: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=900&q=80",
-    alt: "Minimalist Kitchen Design",
-    caption: "Design — Minimalist Handleless Kitchen",
+    src: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=900&q=80",
+    alt: "Luxury Villa Master Bedroom",
+    caption: "Interior — Opulent Master Suite",
   },
 ];
 
@@ -39,7 +39,7 @@ function ImageCarousel() {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
-  const next = () => goTo((current + 1) % kitchenImages.length);
+  const next = () => goTo((current + 1) % villaImages.length);
 
   useEffect(() => {
     const timer = setInterval(next, 4500);
@@ -53,7 +53,7 @@ function ImageCarousel() {
         style={{ position: 'relative', width: '100%', aspectRatio: '4/3', overflow: 'hidden', cursor: 'pointer' }}
         title="Click to see next image"
       >
-        {kitchenImages.map((img, i) => (
+        {villaImages.map((img, i) => (
           <div
             key={i}
             style={{
@@ -73,12 +73,12 @@ function ImageCarousel() {
           fontWeight: 500, letterSpacing: '0.5px',
           display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end',
         }}>
-          <span>{kitchenImages[current].caption}</span>
+          <span>{villaImages[current].caption}</span>
           <span style={{ fontSize: '0.75rem', opacity: 0.7 }}>Click to next ›</span>
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', padding: '12px', background: 'var(--background)' }}>
-        {kitchenImages.map((_, i) => (
+        {villaImages.map((_, i) => (
           <button key={i} onClick={() => goTo(i)} style={{
             width: i === current ? '24px' : '8px', height: '8px', borderRadius: '4px',
             border: 'none', background: i === current ? 'var(--accent)' : 'var(--border-color)',
@@ -90,7 +90,7 @@ function ImageCarousel() {
   );
 }
 
-export default function ModularKitchen() {
+export default function LuxuryVillas() {
   return (
     <div className="container" style={{ paddingTop: '120px', paddingBottom: '100px' }}>
       
@@ -98,16 +98,16 @@ export default function ModularKitchen() {
       <div className="product-split-layout">
         <div className="product-content">
           <ScrollAwake>
-            <h1 className="brand-heading" style={{ fontSize: '3rem', marginBottom: '1.5rem', display: 'inline-block' }}>Modular Kitchen</h1>
+            <h1 className="brand-heading" style={{ fontSize: '3rem', marginBottom: '1.5rem', display: 'inline-block' }}>Luxury Villas</h1>
           </ScrollAwake>
           
           <ScrollAwake className="delay-1">
             <p style={{ marginBottom: '1.5rem', color: 'var(--text-muted)' }}>
-              <strong style={{ color: 'var(--foreground)' }}>At JAC MediaLand,</strong> we understand that the kitchen is the heart of the home, and our modular kitchen designs are crafted to enhance both functionality and aesthetics.
+              <strong style={{ color: 'var(--foreground)' }}>At JAC MediaLand,</strong> we present an exclusive collection of luxury villas designed for those who appreciate the finer things in life. Our handpicked villa properties offer unparalleled privacy, breathtaking architecture, and world-class amenities.
             </p>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--foreground)' }}>Our Approach:</h3>
             <p style={{ marginBottom: '2rem', color: 'var(--text-muted)' }}>
-              We begin by understanding your specific requirements, considering factors such as available space, workflow preferences, and aesthetic preferences. Our experienced designers then work closely with you to create a customized modular kitchen design that reflects your personal style and meets your practical needs.
+              We believe that a villa is more than just a home; it's a statement of lifestyle. Our curation process focuses on properties that seamlessly blend indoor and outdoor living, featuring expansive landscapes, bespoke interiors, and locations that offer both prestige and tranquility.
             </p>
             
             <a href="tel:+919876543210" className="whatsapp-btn">
@@ -137,8 +137,8 @@ export default function ModularKitchen() {
             <div className="product-feature-card">
               <CheckCircle2 className="feature-check-icon" size={28} fill="#4a2b16" color="#ffffff" />
               <div>
-                <h3 className="feature-title">Customized Layout:</h3>
-                <p>We tailor the layout of your modular kitchen to optimize space utilization and ensure efficient workflow, whether you prefer a traditional L-shaped design, a sleek U-shaped layout, or a spacious island configuration.</p>
+                <h3 className="feature-title">Architectural Excellence:</h3>
+                <p>Our portfolio features striking properties that showcase the pinnacle of both contemporary and classic architectural design, built to the highest structural standards.</p>
               </div>
             </div>
           </ScrollAwake>
@@ -147,8 +147,8 @@ export default function ModularKitchen() {
             <div className="product-feature-card" style={{ marginTop: '1.5rem' }}>
               <CheckCircle2 className="feature-check-icon" size={28} fill="#4a2b16" color="#ffffff" />
               <div>
-                <h3 className="feature-title">Quality Materials:</h3>
-                <p>We use high-quality materials and finishes for our modular kitchen designs, ensuring durability, longevity, and easy maintenance.</p>
+                <h3 className="feature-title">Expansive Outdoor Living:</h3>
+                <p>Experience the luxury of seamless indoor-outdoor flow with private infinity pools, manicured landscaped gardens, and spacious entertainment terraces.</p>
               </div>
             </div>
           </ScrollAwake>
@@ -160,8 +160,8 @@ export default function ModularKitchen() {
             <div className="product-feature-card">
               <CheckCircle2 className="feature-check-icon" size={28} fill="#4a2b16" color="#ffffff" />
               <div>
-                <h3 className="feature-title">Smart Storage Solutions:</h3>
-                <p>Our designs incorporate smart storage solutions such as pull-out drawers, corner carousels, and vertical cabinets to maximize storage space and keep your kitchen organized.</p>
+                <h3 className="feature-title">Premium Interiors:</h3>
+                <p>Every villa is finished with bespoke detailing, featuring state-of-the-art chef's kitchens, opulent master suites, and custom-designed luxurious materials throughout.</p>
               </div>
             </div>
           </ScrollAwake>
@@ -170,8 +170,8 @@ export default function ModularKitchen() {
             <div className="product-feature-card" style={{ marginTop: '1.5rem' }}>
               <CheckCircle2 className="feature-check-icon" size={28} fill="#4a2b16" color="#ffffff" />
               <div>
-                <h3 className="feature-title">Stylish Finishes:</h3>
-                <p>From sleek and modern to classic and timeless, we offer a wide range of finishes and materials to suit your taste and complement your home's interior design.</p>
+                <h3 className="feature-title">Prime Locations:</h3>
+                <p>Situated in the most sought-after and exclusive neighborhoods, these properties guarantee unmatched privacy, security, and breathtaking scenic views.</p>
               </div>
             </div>
           </ScrollAwake>

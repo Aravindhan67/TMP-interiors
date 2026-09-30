@@ -149,6 +149,7 @@ p {
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  gap: 2rem;
 }
 .logo h1 {
   font-size: 1.5rem;
@@ -165,7 +166,7 @@ p {
 .nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .nav a {
   text-decoration: none;
@@ -174,6 +175,7 @@ p {
   font-size: 0.95rem;
   transition: var(--transition-smooth);
   position: relative;
+  white-space: nowrap;
 }
 .nav a::after {
   content: '';
@@ -343,8 +345,13 @@ p {
 /* PROCESS GRID */
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .process-card {
   background: var(--card-bg);

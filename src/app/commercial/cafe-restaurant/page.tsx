@@ -5,26 +5,26 @@ import Image from "next/image";
 import { CheckCircle2, PhoneCall } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const kitchenImages = [
+const diningImages = [
   {
-    src: "/kitchen_new.jpg",
-    alt: "Modern Modular Kitchen — Dark Finish",
-    caption: "Design — Contemporary Dark Modular Kitchen",
+    src: "/cafe_restaurant_new.jpg",
+    alt: "Modern Cafe & Restaurant Interior",
+    caption: "Design — Contemporary Dining & Bar Space",
   },
   {
-    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80",
-    alt: "Luxury White Modular Kitchen",
-    caption: "Design — Premium White & Wood Kitchen",
+    src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80",
+    alt: "Fine Dining Restaurant",
+    caption: "Design — Elegant Fine Dining Experience",
   },
   {
-    src: "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=900&q=80",
-    alt: "Modern Kitchen Island",
-    caption: "Design — Open Kitchen with Island",
+    src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80",
+    alt: "Cozy Cafe Interior",
+    caption: "Design — Cozy Artisanal Coffee Shop",
   },
   {
-    src: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=900&q=80",
-    alt: "Minimalist Kitchen Design",
-    caption: "Design — Minimalist Handleless Kitchen",
+    src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80",
+    alt: "Restaurant Lounge & Bar",
+    caption: "Design — Ambient Lounge & Bar Seating",
   },
 ];
 
@@ -39,7 +39,7 @@ function ImageCarousel() {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
-  const next = () => goTo((current + 1) % kitchenImages.length);
+  const next = () => goTo((current + 1) % diningImages.length);
 
   useEffect(() => {
     const timer = setInterval(next, 4500);
@@ -53,7 +53,7 @@ function ImageCarousel() {
         style={{ position: 'relative', width: '100%', aspectRatio: '4/3', overflow: 'hidden', cursor: 'pointer' }}
         title="Click to see next image"
       >
-        {kitchenImages.map((img, i) => (
+        {diningImages.map((img, i) => (
           <div
             key={i}
             style={{
@@ -73,12 +73,12 @@ function ImageCarousel() {
           fontWeight: 500, letterSpacing: '0.5px',
           display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end',
         }}>
-          <span>{kitchenImages[current].caption}</span>
+          <span>{diningImages[current].caption}</span>
           <span style={{ fontSize: '0.75rem', opacity: 0.7 }}>Click to next ›</span>
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', padding: '12px', background: 'var(--background)' }}>
-        {kitchenImages.map((_, i) => (
+        {diningImages.map((_, i) => (
           <button key={i} onClick={() => goTo(i)} style={{
             width: i === current ? '24px' : '8px', height: '8px', borderRadius: '4px',
             border: 'none', background: i === current ? 'var(--accent)' : 'var(--border-color)',
@@ -90,7 +90,7 @@ function ImageCarousel() {
   );
 }
 
-export default function ModularKitchen() {
+export default function CafeRestaurant() {
   return (
     <div className="container" style={{ paddingTop: '120px', paddingBottom: '100px' }}>
       
@@ -98,16 +98,16 @@ export default function ModularKitchen() {
       <div className="product-split-layout">
         <div className="product-content">
           <ScrollAwake>
-            <h1 className="brand-heading" style={{ fontSize: '3rem', marginBottom: '1.5rem', display: 'inline-block' }}>Modular Kitchen</h1>
+            <h1 className="brand-heading" style={{ fontSize: '3rem', marginBottom: '1.5rem', display: 'inline-block' }}>Cafes & Restaurants</h1>
           </ScrollAwake>
           
           <ScrollAwake className="delay-1">
             <p style={{ marginBottom: '1.5rem', color: 'var(--text-muted)' }}>
-              <strong style={{ color: 'var(--foreground)' }}>At JAC MediaLand,</strong> we understand that the kitchen is the heart of the home, and our modular kitchen designs are crafted to enhance both functionality and aesthetics.
+              <strong style={{ color: 'var(--foreground)' }}>At JAC MediaLand,</strong> we understand that dining out is as much about the atmosphere as it is about the food. Our cafe and restaurant interior designs are crafted to create memorable dining experiences that keep customers coming back.
             </p>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--foreground)' }}>Our Approach:</h3>
             <p style={{ marginBottom: '2rem', color: 'var(--text-muted)' }}>
-              We begin by understanding your specific requirements, considering factors such as available space, workflow preferences, and aesthetic preferences. Our experienced designers then work closely with you to create a customized modular kitchen design that reflects your personal style and meets your practical needs.
+              We begin by understanding your culinary concept, target demographic, and service style. Our design team focuses on creating a seamless flow for both patrons and staff, optimizing seating arrangements, and crafting a unique ambiance that perfectly complements your menu.
             </p>
             
             <a href="tel:+919876543210" className="whatsapp-btn">
@@ -137,8 +137,8 @@ export default function ModularKitchen() {
             <div className="product-feature-card">
               <CheckCircle2 className="feature-check-icon" size={28} fill="#4a2b16" color="#ffffff" />
               <div>
-                <h3 className="feature-title">Customized Layout:</h3>
-                <p>We tailor the layout of your modular kitchen to optimize space utilization and ensure efficient workflow, whether you prefer a traditional L-shaped design, a sleek U-shaped layout, or a spacious island configuration.</p>
+                <h3 className="feature-title">Atmospheric Dining:</h3>
+                <p>We expertly combine layered lighting, comfortable textures, and curated decor to set the perfect mood, ensuring your guests enjoy an immersive and memorable dining experience.</p>
               </div>
             </div>
           </ScrollAwake>
@@ -147,8 +147,8 @@ export default function ModularKitchen() {
             <div className="product-feature-card" style={{ marginTop: '1.5rem' }}>
               <CheckCircle2 className="feature-check-icon" size={28} fill="#4a2b16" color="#ffffff" />
               <div>
-                <h3 className="feature-title">Quality Materials:</h3>
-                <p>We use high-quality materials and finishes for our modular kitchen designs, ensuring durability, longevity, and easy maintenance.</p>
+                <h3 className="feature-title">Optimized Seating:</h3>
+                <p>Our layouts strike the perfect balance between creating intimate dining spaces for guests and maximizing seating capacity to support your business's revenue goals.</p>
               </div>
             </div>
           </ScrollAwake>
@@ -160,8 +160,8 @@ export default function ModularKitchen() {
             <div className="product-feature-card">
               <CheckCircle2 className="feature-check-icon" size={28} fill="#4a2b16" color="#ffffff" />
               <div>
-                <h3 className="feature-title">Smart Storage Solutions:</h3>
-                <p>Our designs incorporate smart storage solutions such as pull-out drawers, corner carousels, and vertical cabinets to maximize storage space and keep your kitchen organized.</p>
+                <h3 className="feature-title">Functional Flow:</h3>
+                <p>We design efficient pathways and spatial arrangements that allow your staff to navigate smoothly during peak hours while minimizing disruptions to your patrons.</p>
               </div>
             </div>
           </ScrollAwake>
@@ -170,8 +170,8 @@ export default function ModularKitchen() {
             <div className="product-feature-card" style={{ marginTop: '1.5rem' }}>
               <CheckCircle2 className="feature-check-icon" size={28} fill="#4a2b16" color="#ffffff" />
               <div>
-                <h3 className="feature-title">Stylish Finishes:</h3>
-                <p>From sleek and modern to classic and timeless, we offer a wide range of finishes and materials to suit your taste and complement your home's interior design.</p>
+                <h3 className="feature-title">Thematic Design:</h3>
+                <p>We seamlessly translate your unique culinary vision and brand identity into a cohesive physical space, from bespoke furniture pieces to custom wall treatments and signage.</p>
               </div>
             </div>
           </ScrollAwake>
